@@ -1,7 +1,7 @@
 import './SideDrawer.css';
 
 const SideDrawer = ({show}) => {
-    const sideDrawerClass = ["sideDrawer"];
+    const sideDrawerClass = ["sidedrawer"];
 
     if(show) {
         sideDrawerClass.push("show")

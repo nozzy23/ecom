@@ -13,13 +13,13 @@ import SideDrawer from "./components/SideDrawer";
 import { useState } from 'react';
 
 function App() {
+  const [sideToggle, setSideToogle] = useState(false);
 
-  const [sideToggle, setSideToogle] = useState(false)
   return (
     <Router>
     <Navbar click= {()=> setSideToogle(true)}/>
     <SideDrawer show={sideToggle}/>
-    <Backdrop show={sideToggle} />
+    <Backdrop show={sideToggle} click={() => setSideToogle(false)}/>
     <main>
       <Switch>
         <Route exact path ="/" component={HomeScreen}/>
