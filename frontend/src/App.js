@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
     <Navbar click= {()=> setSideToogle(true)}/>
-    <SideDrawer show={sideToggle}/>
+    <SideDrawer show={sideToggle} click={() => setSideToogle(false)}/>
     <Backdrop show={sideToggle} click={() => setSideToogle(false)}/>
     <main>
       <Switch>
