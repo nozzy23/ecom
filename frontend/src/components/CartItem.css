@@ -15,7 +15,7 @@
     color: black;
 }
 
-..cartitem__name:hover {
+.cartitem__name:hover {
     color: pink;
 }
 
@@ -37,4 +37,32 @@
 .cartitem__deleteBtn:active {
     background: black;
     transform: scale(1.2);
+}
+
+@media (max-width:700px){
+    .cartitem__name {
+        font-size: 0.8rem;
+    }
+
+    .cartitem__select,
+    .cartitem__deleteBtn{
+        padding: 8px 13px;
+    }
+    .cartitem__price {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartitem__name {
+        font-size: 0.6rem;
+    }
+
+    .cartitem__select,
+    .cartitem__deleteBtn{
+        padding: 5px 8px;
+    }
+    .cartitem__price {
+        font-size: 0.6rem;
+    }
 }
