@@ -1,11 +1,14 @@
 import "./CartScreen.css";
-import CartItem from "../components/CartItem"
+
+import CartItem from "../components/CartItem";
 
 const CartScreen = () => {
     return <div className="cartscreen">
         <div className="cartscreen__left">
             <h2>Shopping cart</h2>
 
+            <CartItem />
+            <CartItem />
             <CartItem />
         </div>
         <div className="cartscreen__right">
